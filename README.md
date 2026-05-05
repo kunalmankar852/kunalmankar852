@@ -1,4 +1,4 @@
-# Hey, I'm Kunal 👋
+## Hey, I'm Kunal 👋
 
 Information Security graduate based in Stockholm, with a strong focus on network security, threat detection, and privacy-preserving systems. I combine academic research with hands-on implementation to build solutions that are both secure and practical.
 
