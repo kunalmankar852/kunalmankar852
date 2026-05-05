@@ -2,7 +2,7 @@
 
 Information Security graduate based in Stockholm, with a strong focus on network security, threat detection, and privacy-preserving systems. I combine academic research with hands-on implementation to build solutions that are both secure and practical.
 
-⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
+⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
 
 🚧 Current Focus
 
@@ -13,7 +13,7 @@ Information Security graduate based in Stockholm, with a strong focus on network
 
 My recent work includes a federated learning-based IDS for IoT, achieving high detection accuracy while maintaining data privacy and reducing communication overhead.
 
-⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
+⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
 
 🛠️ Core Skills & Tools
 
@@ -43,7 +43,7 @@ Development & Security Engineering
 * ASP.NET
 * Secure system design, encryption (AES-256)
 
-⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
+⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
 
 📬 Contact
 
@@ -51,7 +51,7 @@ Development & Security Engineering
 * 💼 https://linkedin.com/in/kunal-mankar
 * 📍 Stockholm, Sweden
 
-⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
+⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
 
 🎯 Availability
 
