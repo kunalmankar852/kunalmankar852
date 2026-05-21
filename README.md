@@ -7,11 +7,12 @@ Information Security graduate based in Stockholm, with a strong focus on network
 🚧 Current Focus
 
 * Designing and evaluating intrusion detection systems (IDS)
+* Developing hands-on SOC environments ([SOC-Lab-Detection](./SOC-Lab-Detection))
 * Applying machine learning to cybersecurity, particularly in IoT environments
 * Strengthening expertise in cloud security and scalable architectures
 * Advancing skills in risk analysis, threat modeling, and security control validation
 
-My recent work includes a federated learning-based IDS for IoT, achieving high detection accuracy while maintaining data privacy and reducing communication overhead.
+My recent work includes a federated learning-based IDS for IoT, and a comprehensive [SOC Home Lab](./SOC-Lab-Detection) for threat detection and incident response simulation.
 
 ⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
 
