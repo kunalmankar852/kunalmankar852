@@ -1,0 +1,48 @@
+<!--
+  Sysmon configuration for SOC Lab
+  Targeted at capturing common adversary TTPs while maintaining manageable log volume.
+-->
+<Sysmon schemaversion="4.50">
+  <HashAlgorithms>*</HashAlgorithms>
+  <CheckRevocation />
+  <EventFiltering>
+    <!-- Event ID 1: Process Creation -->
+    <RuleGroup name="Process Creation" groupRelation="or">
+      <ProcessCreate onmatch="include">
+        <Image condition="contains">cmd.exe</Image>
+        <Image condition="contains">powershell.exe</Image>
+        <Image condition="contains">wscript.exe</Image>
+        <Image condition="contains">cscript.exe</Image>
+        <Image condition="contains">schtasks.exe</Image>
+        <Image condition="contains">net.exe</Image>
+        <Image condition="contains">whoami.exe</Image>
+      </ProcessCreate>
+    </RuleGroup>
+
+    <!-- Event ID 3: Network Connection -->
+    <RuleGroup name="Network Connection" groupRelation="or">
+      <NetworkConnect onmatch="include">
+        <DestinationPort condition="is">4444</DestinationPort>
+        <DestinationPort condition="is">8080</DestinationPort>
+        <Image condition="contains">powershell.exe</Image>
+      </NetworkConnect>
+    </RuleGroup>
+
+    <!-- Event ID 11: File Create -->
+    <RuleGroup name="File Create" groupRelation="or">
+      <FileCreate onmatch="include">
+        <TargetFilename condition="contains">Startup</TargetFilename>
+        <TargetFilename condition="end with">.exe</TargetFilename>
+        <TargetFilename condition="end with">.ps1</TargetFilename>
+      </FileCreate>
+    </RuleGroup>
+
+    <!-- Event ID 12, 13, 14: Registry Event -->
+    <RuleGroup name="Registry Modification" groupRelation="or">
+      <RegistryEvent onmatch="include">
+        <TargetObject condition="contains">CurrentVersion\Run</TargetObject>
+        <TargetObject condition="contains">CurrentVersion\RunOnce</TargetObject>
+      </RegistryEvent>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>

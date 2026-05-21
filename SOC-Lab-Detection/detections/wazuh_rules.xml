@@ -1,0 +1,39 @@
+<!--
+  Custom Wazuh Rules for SOC Lab Simulations
+-->
+<group name="soc_lab,">
+
+  <!-- Detect SSH Brute Force -->
+  <rule id="100001" level="10">
+    <if_sid>5712</if_sid> <!-- SSHD Authentication Failed -->
+    <match>authentication failure</match>
+    <description>SOC Lab: Multiple SSH Authentication Failures - Possible Brute Force</description>
+    <same_source_ip />
+    <frequency>5</frequency>
+    <timeframe>120</timeframe>
+    <mitre>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+
+  <!-- Detect Crontab Manipulation -->
+  <rule id="100002" level="7">
+    <if_sid>530</if_sid> <!-- FIM (File Integrity Monitoring) Event -->
+    <match>/var/spool/cron</match>
+    <description>SOC Lab: File Integrity Change detected in crontab directory</description>
+    <mitre>
+      <id>T1053.003</id>
+    </mitre>
+  </rule>
+
+  <!-- Detect Sysmon: Malicious Network Connection -->
+  <rule id="100003" level="12">
+    <if_group>sysmon_event3</if_group>
+    <field name="sysmon.destinationPort">4444</field>
+    <description>SOC Lab: Potential Reverse Shell connection detected on port 4444</description>
+    <mitre>
+      <id>T1059</id>
+    </mitre>
+  </rule>
+
+</group>
